@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import moduleAlias from 'module-alias'
+
+moduleAlias.addAliases({
+  components: __dirname + "/componenets",
+  containers: __dirname + "/containers",
+  utils: __dirname + "/utils",
+});
+
 
 ReactDOM.render(
   <React.StrictMode>
