@@ -22,10 +22,11 @@ const RouterMain = () => {
   return (
     <Router>
       <Switch>
+        <Route path="/" exact component={() => <Redirect to="/admin/movies" />} />
         <Route path="/admin/:path?" exact>
           <Admin>
             <Switch>
-              <Route path="/admin" exact component={Dashboard} />
+              <Route path="/admin/" exact component={Dashboard} />
               <Route path="/admin/movies" exact component={Movies} />
               <Route path="/admin/turn" exact component={Dashboard} />
               <Route path="/admin/administrators" exact component={Dashboard} />
@@ -35,9 +36,9 @@ const RouterMain = () => {
             </Switch>
           </Admin>
         </Route>
-        <Route path="/admin/404" component={NotFoundAdmin} />
+        <Route component={() => <Redirect to="/admin/404" />} />
 
-        <Route>
+        {/* <Route>
           <Main>
             <Switch>
               <Route path="/" exact component={Home} />
@@ -45,7 +46,7 @@ const RouterMain = () => {
               <Route component={() => <Redirect to="/404" />} />
             </Switch>
           </Main>
-        </Route>
+        </Route> */}
       </Switch>
     </Router>
   );

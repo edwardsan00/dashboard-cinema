@@ -16,7 +16,8 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "xdate": "^0.8.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,6 +49,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-router": "^5.1.7",
     "@types/react-router-dom": "^5.1.5",
+    "@types/xdate": "^0.8.30",
     "babel-plugin-module-resolver": "^4.0.0"
   }
 }

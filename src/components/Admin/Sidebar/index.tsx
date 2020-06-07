@@ -58,12 +58,10 @@ const useStyles = makeStyles(({ palette }) => ({
 const Sidebar: FunctionComponent = (): JSX.Element => {
   const classes = useStyles()
   const location = useLocation()
-  console.log("location", location)
   return (
     <div className={classes.sidebar}>
       <ul className={classes.sidebarList}>
         { dashboradPath.map(({ label, path }) => {
-          console.log(location.pathname === `/admin${path}`);
           return (
             <li key={path} className={classes.sidebarItem}>
               <Link
