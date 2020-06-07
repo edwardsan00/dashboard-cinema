@@ -6,16 +6,17 @@ import {
   Redirect
 } from "react-router-dom"
 
-import Main from "../containers/layouts/Main"
-import Admin from "../containers/layouts/Admin"
+import Main from "containers/layouts/Main"
+import Admin from "containers/layouts/Admin"
 
 // views
-import Home from "../containers/views/Main/Home"
-import NotFound from "../containers/views/Main/NotFound"
+import Home from "containers/views/Main/Home"
+import NotFound from "containers/views/Main/NotFound"
 
 // admin Views
-import Dashboard from "../containers/views/Admin/Dashboard"
-import NotFoundAdmin from "../containers/views/Admin/NotFound"
+import Dashboard from "containers/views/Admin/Dashboard"
+import Movies from 'containers/views/Admin/Movies'
+import NotFoundAdmin from "containers/views/Admin/NotFound"
 
 const RouterMain = () => {
   return (
@@ -25,7 +26,7 @@ const RouterMain = () => {
           <Admin>
             <Switch>
               <Route path="/admin" exact component={Dashboard} />
-              <Route path="/admin/movies" exact component={Dashboard} />
+              <Route path="/admin/movies" exact component={Movies} />
               <Route path="/admin/turn" exact component={Dashboard} />
               <Route path="/admin/administrators" exact component={Dashboard} />
               <Route path="/admin/profile" exact component={Dashboard} />

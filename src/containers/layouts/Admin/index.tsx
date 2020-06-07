@@ -18,9 +18,10 @@ const useStyles = makeStyles(({ palette }) => ({
     height: '100%'
   },
   containerBox: {
-    width: '100%',
-    padding: '0 20px',
-    backgroundColor: palette.grey[100]
+    width: 'calc(100% - 40px)',
+    height: 'calc(100% - 40px)',
+    margin: '20px auto',
+    overflow: 'auto',
   }
 }))
 
