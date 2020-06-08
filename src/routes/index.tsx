@@ -6,17 +6,17 @@ import {
   Redirect
 } from "react-router-dom"
 
-import Main from "containers/layouts/Main"
+// import Main from "containers/layouts/Main"
 import Admin from "containers/layouts/Admin"
 
 // views
-import Home from "containers/views/Main/Home"
-import NotFound from "containers/views/Main/NotFound"
+// import Home from "containers/views/Main/Home"
+// import NotFound from "containers/views/Main/NotFound"
 
 // admin Views
 import Dashboard from "containers/views/Admin/Dashboard"
 import Movies from 'containers/views/Admin/Movies'
-import NotFoundAdmin from "containers/views/Admin/NotFound"
+// import NotFoundAdmin from "containers/views/Admin/NotFound"
 
 const RouterMain = () => {
   return (
